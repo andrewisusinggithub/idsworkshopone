@@ -11,7 +11,7 @@ output: html_document
 library(tidyverse) 
 ```
 
-### Exercises 16-17
+### Exercises 16-17h
 
 We set up the data frame. Edit the data below to include information about your team members.
 
