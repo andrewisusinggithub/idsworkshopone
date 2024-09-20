@@ -11,21 +11,21 @@ output: html_document
 library(tidyverse) 
 ```
 
-### Exercises 16-17h
+### Exercises 16-17
 
 We set up the data frame. Edit the data below to include information about your team members.
 
 ```{r setup-tibble}
 team_data <- tibble(
-  name = c("Peter Rabbit", "member 1", "member 2", 
-           "member 3", "member 4"),
-  github_username = c("mcgregors-garden", "username 1", "username 2", 
-                      "username 3", "username 4"), 
-  colour = c("powderblue", "colour 1", "colour 2", 
-             "colour 3", "colour 4"),
-  hobby = c("Hopping", "hobby 1", "hobby 2", 
-            "hobby 3", "hobby 4"),
-  favourite_number = c(2, NA, NA, NA, NA)
+  name = c("Andrew", "Alex", "Mark", 
+           "Ross", "Roderick"),
+  github_username = c("andrewisusinggithub", "AlexWalker09", "MarkFlorov", 
+                      "Ross-shinnie", "RoderickGAM"), 
+  colour = c("cornflowerblue", "aliceblue", "azure1", 
+             "blue3", "red"),
+  hobby = c("Climbing", "", "Cooking", 
+            "", "Running"),
+  favourite_number = c(2, 2, 2, 1, 7)
   )
 
 team_data
@@ -47,19 +47,19 @@ p1
 ```
 
 
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
+Each persons favourite number on a bar chart in their favourite colour.
 
-### Exercises 19
+### Exercises 19s
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "favourite number", 
+          y = "github username",
+          title = "")
 ```
 
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
+labs() adds labels to the bar chart
 
 ### Exercise 20
 
@@ -69,4 +69,4 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
+use data normalizing stuff (remove spaces and caps and whiespace) so that  syntax of hobby name doesn't matter :D
